@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  !important
+}
+
+header{
+    background: gray;
+    height: 70px;
+}
+
+.navbar{
+    width: 80%;
+    background: rgb(207, 199, 199);
+    margin: auto;
+    height: 100%;
+    
+}
+
+.navbar-brand{
+  
+
+    margin-top: -6px;
+
+}
+.navbar-brand i {
+    font-size: larger;
+    color: red;
+    position: absolute;
+    top: 12px;
+
+    
+} .navbar-brand img {
+    width: 80px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+/* ///////////////////////ejbare bade heta kermel lama fout ala home page le2ia edeme hye wlogout  */
+#user-info{
+    display: none;
+    margin-right: 15px;
+    background-color: rgb(173, 138, 138);
+    font-size: larger;
+    padding: 5px;
+    border-radius: 20px;
+   
+}
+#user-info:hover{
+    color: chartreuse;
+}
+
+
+
+
+
+
+.section-form {
+    position: absolute;    /* hawde l 4 steps deyman laswaset lform balb nes safha deyamn nafs lshi */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* ////////////////////////////////////////// */
+
+   
+
+    
+}
+
+ .section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: dimgrey;
+    width: 500px;
+    padding: 20px;
+}
+
+.form-row {
+    width: 100%;
+    margin-bottom: 5px;
+  
+}
+
+.col-auto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+}
+
+.form-text {
+    text-align: right;
+    color: #6c757d;
+    transition: color 0.3s ease-in-out;
+}
+
+.form-row:hover {
+    background-color: #434747;
+    
+}
+/* when hover or focus on form-text the color of must be change to red */
+.form-row:hover .form-text {
+    color: #ff0000; /* Red color on hover */
+} 
+
+.input-group input:focus + .form-text {
+    color: #ff0000; /* Red color on focus */
+}
+
+
+.form-row:hover input{
+    border-color: #ff0000;
+}
+
+.col-12:hover{
+    opacity: 0.3;
+}
+
+/* card section  */
+.first-card{
+    margin: 15px 0px;
+}
+.card-title-1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+.card-text-1{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+}
+
+.body-cart{
+    margin:20px 0px;
+}
+
+.card{
+    margin: auto;
+}
+
+.card-img{
+    width: 100%;
+    height: 350px;
+    border-radius: 0%;
+}
+
+.body-cart img {
+    height: 250px;
+}
+.body-cart .card-body {
+    background-color: darkgrey;
+    height: 300px;
+} 
+/* overlay on image */
+
+/* Add this to your existing styles */
+.card {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.card:hover {
+    border-color: green;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(35, 37, 35, 0.5), rgba(0, 255, 0, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Ensures that the overlay doesn't interfere with clicks */
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card-body {
+    z-index: 2; /* Ensure card content is above the overlay */
+}
+
+.card:hover .card-body {
+    z-index: 3; /* Ensure card content is above the overlay */
+}
+
+/* icon */
+.favorite-icon {
+    cursor: pointer;
+    margin-left: 150px;
+    font-size: larger;
+}
+
+.favorite-icon i {
+    color: grey; /* Default heart color */
+}
+
+.favorite-icon.favorited i {
+    color: red; /* Color the heart red when favorited */
+}
+
+/* //////////////////////////////////////////////////// */
+
+
+
+/* logout btn */
+
+/* Add this to your existing styles */
+/* Add this to your existing styles */
+
+.header-badge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shoppingcart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+}
+
+.fa-shopping-cart {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.badge {
+    background-color: #f00;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.3em 0.6em;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    display: none;  /*hayde amalta ekher shi kermel hala2 bade  kel mazid shi add to cart tfta7 wtbayen ande */  
+
+}
+
+.carts-products {
+display: none;
+   position: absolute;
+   width: 200px;
+   transform: translate(25%,9%);
+   background-color: #fff;
+   top: 50px;
+   padding: 10px;
+   border: 1px solid green;
+   z-index: 888;
+   opacity: 0.7;
+}
+.carts-products a{
+     display: block;
+     color: black;
+     margin: 4px;
+     padding:0;
+     background-color: greenyellow;
+     text-align: center;
+     text-decoration: none;
+}
+
+.header-badge a {
+    margin: 0 15px;
+}
+
+
+/* ... Your existing styles ... */
+
+.body-cart .row .col {
+  display: flex;
+  justify-content: space-between; /* Add margin to the bottom of each column */
+} 
+
+/* ... Your existing styles ... */

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carts products </title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Bootstrap JS bundle (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy8RjsaeR4+PpL3qdaQoqcvI/fF6UKxL1N" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/images.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <i>shopping cart </i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="navbar-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+                      </ul>
+                      <div class="header-badge">
+                        <li class="nav-item-2" id="user-info">
+                            <a href="#" class="shoppingcart">
+                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                             <span class="badge"></span>
+                             <div class="carts-products">
+                                <div></div>
+                                <a href="carts-products.html">view all products</a>
+                             </div>
+                            </a>
+                          <a class="nav-link" id="user-data" ></a>
+                          <a href="#" id="logout">logout</a>
+                      </li>
+                    </div>
+                </div>
+                    
+            </div>
+        </nav>
+    </header>
+    <section class="body-cart">
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="row-draw">
+        <!-- <div class="col" >
+            <div class="card" style="width: 24rem;">
+                <img src="images/isolatewhey.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Now Sports Nutrition Whey Protein Isolate - Unflavored, 1.2 Pounds</h5>
+                  <p class="card-text">Protein source: Whey protein isolate <br>| Flavor: Unflavored |<br> Ingredients: No added sugar or artificial sweeteners <br> $29 
+                    <br> <strike>$40</strike> <span>now 28% off</span></p>
+                  <a href="#" class="btn btn-primary">Add to card</a><span class="favorite-icon" onclick="toggleFavorite(this)">
+            <i class="far fa-heart"></i></span>
+                </div>
+              </div>
+        </div> -->
+        <!-- <div class="col">
+            <div class="card" style="width: 24rem;">
+                <img src="images/whey.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Optimum Nutrition Gold Standard Whey - Double Rich Chocolate</h5>
+                  <p class="card-text">Protein source: Whey protein isolate<br>| Flavor: Double-rich chocolate |<br> Ingredients: Natural and artificial flavors, no added sugar <br> $39 
+                    <br><strike>$42</strike> <span>now 7% off</span></p>
+                  <a href="#" class="btn btn-primary">Add to card</a><span class="favorite-icon" onclick="toggleFavorite(this)">
+            <i class="far fa-heart"></i></span>
+                </div>
+              </div>
+        </div>
+    
+        <div class="col">
+            
+            <div class="card" style="width: 24rem;">
+                <img src="images/vital.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Vital Proteins Collagen Peptides</h5>
+                  <p class="card-text"> Protein source:Cow-based collagen peptides<br>|  Flavor: Unflavored |<br>Ingredients: No added sugar or artificial sweeteners <br> $22 
+                    <br> <strike>$27</strike> <span>now 20% off</span></p><br>
+                  <a href="#" class="btn btn-primary">Add to card</a><span class="favorite-icon" onclick="toggleFavorite(this)">
+            <i class="far fa-heart"></i></span>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 24rem;">
+                <img src="images/pai.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Orgain Simple Vegan Protein Powder - Vanilla</h5>
+                  <p class="card-text">Protein source: Pea protein, chia seeds, pumpkin seed protein, almond protein<br>| Flavor: Vanilla |<br>Ingredients: No artificial sweeteners <br> $22
+                    <br><strike>$25</strike> <span>now 12% off</span></p>
+                  <a href="#" class="btn btn-primary">Add to card</a><span class="favorite-icon" onclick="toggleFavorite(this)">
+            <i class="far fa-heart"></i></span>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 24rem;">
+                <img src="images/vega.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Vega Sport Premium Protein - Chocolate, 29.5 Oz.</h5>
+                  <p class="card-text">Protein source: Pea, pumpkin, and sunflower-seed protein<br>| Flavor: Chocolate |<br> Ingredients: Natural flavors and stevia <br> $33 
+                    <br><strike>$47</strike><span>now 30% off</span></p>
+                  <a href="#" class="btn btn-primary">Add to card</a><span class="favorite-icon" onclick="toggleFavorite(this)">
+            <i class="far fa-heart"></i> </span>
+                  
+              </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 24rem;">
+                <img src="images/iconic.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Iconic Chocolate Truffle Protein Powder - 1 lb.</h5>
+                  <p class="card-text">Protein source: Whey protein isolate<br>| Flavor:Chocolate or vanilla |<br>Ingredients: Cocoa powder, monk fruit, and stevia <br> $40
+                    </p>
+                    <br>
+                  <a href="#" class="btn btn-primary">Add to card</a><span class="favorite-icon" onclick="toggleFavorite(this)">
+            <i class="far fa-heart"></i></span>
+                </div>
+              </div>
+        </div> -->
+      </div>
+    
+    </section>
+    <script src="js/carts.js"></script>
+     <script src="js/user.js"></script>   <!--  kawno hal header bade nafs lshakel bkel lmahalet hekkkk  -->
+
+</body>
+</html>
